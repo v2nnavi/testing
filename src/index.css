@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'MS Sans Serif', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: none;
+  image-rendering: pixelated;
+  overflow: hidden;
+  background: #000;
+}
+
+.taskbar {
+  @apply h-10 bg-[#c0c0c0] border-t-[3px] border-t-white border-l-[3px] border-l-white border-r-[3px] border-r-[#808080] border-b-[3px] border-b-[#808080] flex items-center px-1 z-50;
+}
+
+.start-button {
+  @apply px-4 py-1 bg-[#c0c0c0] border-t-2 border-t-white border-l-2 border-l-white border-r-2 border-r-[#808080] border-b-2 border-b-[#808080] hover:bg-[#d4d4d4] active:border-[#808080] active:border-b-white active:border-r-white flex items-center gap-2;
+}
+
+.time-display {
+  @apply px-2 py-1 bg-[#c0c0c0] border border-[#808080] text-sm;
+}
